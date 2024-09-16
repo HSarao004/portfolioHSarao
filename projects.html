@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects Showcase - Harsimran Singh Sarao Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header with navbar -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav_logo">Harsimran</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <section class="projects section">
+            <h1 class="section__title">Projects Showcase</h1>
+            <div class="projects__container container grid">
+                <!-- Example Project Card -->
+                <div class="project__card">
+                    <a href="projects/project1.html">
+                        <img src="images/p1_home.png" alt="Project 1" class="project__img">
+                        <div class="project__info">
+                            <h2 class="project__title">WristRotation Blog Website</h2>
+                            <p class="project__details">A CMS built with PHP and MySQL, featuring admin CRUD operations for posts and user login and commenting functionality.</p>
+                            <p class="project__description">Click to see the complete details of this project.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repeat the above block for each project -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <ul class="footer__links">
+                    <li><a href="index.html" class="footer__link">Home</a></li>
+                    <li><a href="about.html" class="footer__link">About Me</a></li>
+                    <li><a href="projects.html" class="footer__link">Projects</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Me</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <img src="images/social1.png" alt="facebook" class="social__img">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <img src="images/social2.png" alt="instagram" class="social__img">
+                    </a>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; All rights reserved by Harsimran 2023</span>
+        </div>
+    </footer>
+</body>
+</html>

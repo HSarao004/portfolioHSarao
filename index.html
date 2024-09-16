@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harsimran Singh Sarao Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--==================== HEADER with navbar ====================-->
+    <header class="header">
+        <nav class="nav" aria-label="nav-1">
+            <a href="index.html" class="nav_logo">Harsimran</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section">
+            <div class="home__rectangle"></div>
+            <div class="home__container container grid">
+                <div class="home__perfil perfil">
+                    <div class="perfil__content">
+                        <img src="images/homepage_photo.png" alt="image" class="perfil__img" id="home_img">
+                    </div>
+                </div>
+                <div class="home__content grid">
+                    <div class="home__data grid">
+                        <h1 class="home__name">Harsimran Sarao</h1>
+                        <h2 class="home__profession">Full Stack Web Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section">
+            <div class="contact__container container grid">
+                <h2 class="section__title">
+                    Let's Talk <br> About Your Project
+                </h2>
+            </div>
+            <div id="contact-button">
+                <a href="contact.html" class="contact__button" id="index_button">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <ul class="footer__links">
+                    <li><a href="index.html" class="footer__link">Home</a></li>
+                    <li><a href="about.html" class="footer__link">About Me</a></li>
+                    <li><a href="projects.html" class="footer__link">Projects</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Me</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <img src="images/social1.png" alt="facebook" class="social__img">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <img src="images/social2.png" alt="instagram" class="social__img">
+                    </a>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; all rights reserved by HARSIMRAN 2023</span>
+        </div>
+    </footer>
+</body>
+
+</html>

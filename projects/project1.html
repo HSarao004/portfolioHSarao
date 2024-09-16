@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 1 - Harsimran Singh Sarao Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <!-- Header with navbar -->
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html" class="nav_logo">Harsimran</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../about.html" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="../projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="../contact.html" class="nav__link">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <section class="project-detail section">
+            <h1 class="section__title">Project 1: WristRotation</h1>
+            <div class="project-detail__container container">
+                <div class="project-detail__content">
+                    <h2>Content Management System (CMS) Built with PHP and MySQL</h2>
+                    <p>This CMS is a dynamic and user-friendly platform designed for managing and publishing content. Developed using PHP and MySQL, it offers comprehensive features for both administrators and regular users.</p>
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Admin Features:</strong>
+                            <ul>
+                                <li><strong>CRUD Operations:</strong> Admins can create, read, update, and delete posts, giving them full control over the website’s content.</li>
+                                <li><strong>Post Management:</strong> Admins can manage published posts, edit content, add media, and categorize posts for better organization.</li>
+                            </ul>
+                        </li>
+                        <li><strong>User Features:</strong>
+                            <ul>
+                                <li><strong>User Registration and Authentication:</strong> Users can register, log in, and securely manage their profiles.</li>
+                                <li><strong>Commenting System:</strong> Registered users can comment on posts, engaging in discussions and sharing their opinions on various topics.</li>
+                                <li><strong>Post Interaction:</strong> Users can view posts, search for content, and interact through comments.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h2>Project Gallery</h2>
+                    <div class="project-gallery">
+                        <div class="project-item">
+                            <img src="../images/p1_home.png" alt="Homepage Screenshot">
+                            <p>The index page where users land upon visiting the website, prompting them to log in or sign up.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_signup.png" alt="Signup Page Screenshot">
+                            <p>Users have the option to sign up if they don't have an account. Their credentials are saved in the database with hashed passwords for security.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_login.png" alt="Login Page Screenshot">
+                            <p>Users with existing accounts can log in, and the website verifies credentials with the database for secure access.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_homepage.png" alt="Logged-in Homepage Screenshot">
+                            <p>After logging in, users are welcomed and can view all watch posts. Three different filtering options are available for the posts.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_pagination.png" alt="Pagination Screenshot">
+                            <p>Users are provided with pagination functionality for convenient browsing through posts.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_fullpost.png" alt="Full Post Screenshot">
+                            <p>Clicking on a watch name leads to a detailed post page with more information about the watch, along with comments from other users.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_admindash.png" alt="Admin Dashboard Screenshot">
+                            <p>The admin dashboard allows admins to view and edit watch posts, with options to update or delete them.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_editpost.png" alt="Edit Post Screenshot">
+                            <p>The edit post page enables admins to modify any information about a watch post or delete it if necessary.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_category.png" alt="Category Management Screenshot">
+                            <p>Admins can create, edit, or delete categories assigned to watches for better content management.</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/p1_edituser.png" alt="User Management Screenshot">
+                            <p>Admins have the option to create or delete user accounts, ensuring proper user management on the platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <ul class="footer__links">
+                    <li><a href="../index.html" class="footer__link">Home</a></li>
+                    <li><a href="../about.html" class="footer__link">About Me</a></li>
+                    <li><a href="../projects.html" class="footer__link">Projects</a></li>
+                    <li><a href="../contact.html" class="footer__link">Contact Me</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <img src="../images/social1.png" alt="Facebook" class="social__img">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <img src="../images/social2.png" alt="Instagram" class="social__img">
+                    </a>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; All rights reserved by Harsimran 2023</span>
+        </div>
+    </footer>
+</body>
+</html>

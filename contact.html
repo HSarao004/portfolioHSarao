@@ -1,0 +1,129 @@
+<!-- /********************
+    Name: Harsimran Singh Sarao
+    Date:2023-12-08
+    Description:This is the HTML file for the contact of my portfolio website.
+
+*********************/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harsimran Singh Sarao Portfolio Website </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="contact.js"></script>
+  </head>
+  <body>
+	
+
+    <!--==================== HEADER with navbar  ====================-->
+
+    <header class="header" id="header">
+        <nav class="nav" id="nav_container">
+            <a href="index.html" class="nav_logo">Harsimran</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                   <li class="nav__item">
+                      <a href="index.html" class="nav__link">Home</a>
+                   </li>
+ 
+                   <li class="nav__item">
+                      <a href="about.html" class="nav__link">About Me</a>
+                   </li>
+                   <li class="nav__item">
+                     <a href="projects.html" class="nav__link">Projects</a>
+                  </li>
+                   <li class="nav__item">
+                      <a href="contact.html" class="nav__link">Contact Me</a>
+                   </li>
+                </ul>
+ 
+             </div>
+ 
+            
+        </nav>
+
+
+    </header>
+    <main class="main">
+      <div id="contact_main_div">
+        <!--==================== CONTACT ====================-->
+        <section class="contact_section">
+         
+
+           <div class="contact__page_container_grid">
+              <form  method ="get" action="#" class="contact__form grid" id="contact_form">
+               <fieldset>
+                  <legend class="section__title">Let's Talk <br>
+                     About Your Project</legend>
+               
+                 <div class="contact__group grid">
+                    <div class="contact__box">
+                       <label for="name" class="contact__label">Name</label>
+                       <input type="text" name="user_name" id="name" required placeholder="Write your names" class="contact__input">
+                       <div class="contact_error" id="name_error">* Enter valid name</div>
+                    </div>
+                    <div class="contact__box">
+                        <label for="number" class="contact__label">Phone Number</label>
+                        <input type="tel" name="user_number" id="number" required placeholder="Write your number" class="contact__input">
+                        <div class="contact_error" id="number_error">* Required field</div>
+                     </div>
+
+                    <div class="contact__box"> 
+                       <label for="email" class="contact__label">Email Address</label>
+                       <input type="email" name="user_email" id="email" required placeholder="Write your email" class="contact__input">
+                       <div class="contact_error" id="email_error">* Required field</div>
+                       
+                    </div>
+                 </div>
+
+                 <div class="contact__box contact__area">
+                    <label for="message" class="contact__label">Message</label>
+                    <textarea name="user_message" id="message" required placeholder="Write your message" class="contact__input" rows="6" cols="8"></textarea>
+                    <div class="contact_error" id="message_error">* Required field</div>
+                 </div>
+
+
+                 <button type="submit" class="contact__send button" value="submit">Send Message</button>
+                 <button type="reset"  class = "contact_reset button" value="reset">Reset</button>
+               </fieldset>
+              </form>
+           </div>
+        </section>
+      </div>
+     </main>
+     <footer class="footer">
+        <div class="footer__container container grid">
+           <div class="footer__content grid">
+             
+
+              <ul class="footer__links">
+                 <li>
+                    <a href="index.html" class="footer__link">Home</a>
+                 </li>
+
+                
+
+                 <li>
+                    <a href="about.html" class="footer__link">About Me</a>
+                 </li>
+              </ul>
+
+              <div class="footer__social">
+                 <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <img src="images/social1.png" alt="facebook" class="social__img">
+                 </a>
+
+                 <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <img src="images/social2.png" alt="instagram" class="social__img">
+                 </a>
+              </div>
+           </div>
+
+           <span class="footer__copy">
+              &#169; all rights reserved by HARSIMRAN 2023
+           </span>
+        </div>
+     </footer>
+
