@@ -55,40 +55,37 @@
            <div class="contact__page_container_grid">
               <form  method ="get" action="#" class="contact__form grid" id="contact_form">
                <fieldset>
-                  <legend class="section__title">Let's Talk <br>
-                     About Your Project</legend>
-               
-                 <div class="contact__group grid">
-                    <div class="contact__box">
-                       <label for="name" class="contact__label">Name</label>
-                       <input type="text" name="user_name" id="name" required placeholder="Write your names" class="contact__input">
-                       <div class="contact_error" id="name_error">* Enter valid name</div>
-                    </div>
-                    <div class="contact__box">
-                        <label for="number" class="contact__label">Phone Number</label>
-                        <input type="tel" name="user_number" id="number" required placeholder="Write your number" class="contact__input">
-                        <div class="contact_error" id="number_error">* Required field</div>
-                     </div>
-
-                    <div class="contact__box"> 
-                       <label for="email" class="contact__label">Email Address</label>
-                       <input type="email" name="user_email" id="email" required placeholder="Write your email" class="contact__input">
-                       <div class="contact_error" id="email_error">* Required field</div>
-                       
-                    </div>
-                 </div>
-
-                 <div class="contact__box contact__area">
-                    <label for="message" class="contact__label">Message</label>
-                    <textarea name="user_message" id="message" required placeholder="Write your message" class="contact__input" rows="6" cols="8"></textarea>
-                    <div class="contact_error" id="message_error">* Required field</div>
-                 </div>
-
-
-                 <button type="submit" class="contact__send button" value="submit">Send Message</button>
-                 <button type="reset"  class = "contact_reset button" value="reset">Reset</button>
-               </fieldset>
-              </form>
+                  <form method="post" action="send_email.php" class="contact__form grid" id="contact_form">
+                     <fieldset>
+                         <legend class="section__title">Let's Talk <br>About Your Project</legend>
+                         
+                         <div class="contact__group grid">
+                             <div class="contact__box">
+                                 <label for="name" class="contact__label">Name</label>
+                                 <input type="text" name="user_name" id="name" required placeholder="Write your names" class="contact__input">
+                                 <div class="contact_error" id="name_error">* Enter valid name</div>
+                             </div>
+                             <div class="contact__box">
+                                 <label for="number" class="contact__label">Phone Number</label>
+                                 <input type="tel" name="user_number" id="number" required placeholder="Write your number" class="contact__input">
+                                 <div class="contact_error" id="number_error">* Required field</div>
+                             </div>
+                             <div class="contact__box"> 
+                                 <label for="email" class="contact__label">Email Address</label>
+                                 <input type="email" name="user_email" id="email" required placeholder="Write your email" class="contact__input">
+                                 <div class="contact_error" id="email_error">* Required field</div>
+                             </div>
+                         </div>
+                         <div class="contact__box contact__area">
+                             <label for="message" class="contact__label">Message</label>
+                             <textarea name="user_message" id="message" required placeholder="Write your message" class="contact__input" rows="6" cols="8"></textarea>
+                             <div class="contact_error" id="message_error">* Required field</div>
+                         </div>
+                 
+                         <button type="submit" class="contact__send button" value="submit">Send Message</button>
+                         <button type="reset"  class="contact_reset button" value="reset">Reset</button>
+                     </fieldset>
+                 </form>
            </div>
         </section>
       </div>

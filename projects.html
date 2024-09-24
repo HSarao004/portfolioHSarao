@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <!-- Header with navbar -->
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="nav_logo">Harsimran</a>
+            <a href="index.html" class="nav__logo">Harsimran</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
@@ -29,18 +31,31 @@
         <section class="projects section">
             <h1 class="section__title">Projects Showcase</h1>
             <div class="projects__container container grid">
-                <!-- Example Project Card -->
+                <!-- Project 1 Card -->
                 <div class="project__card">
                     <a href="projects/project1.html">
                         <img src="images/p1_home.png" alt="Project 1" class="project__img">
                         <div class="project__info">
                             <h2 class="project__title">WristRotation Blog Website</h2>
-                            <p class="project__details">A CMS built with PHP and MySQL, featuring admin CRUD operations for posts and user login and commenting functionality.</p>
-                            <p class="project__description">Click to see the complete details of this project.</p>
+                            <p class="project__details">A content management system (CMS) built with PHP and MySQL. It includes admin CRUD operations for posts, as well as user login and commenting features.</p>
+                            <p class="project__description">Click to view the full details of this project.</p>
                         </div>
                     </a>
                 </div>
-                <!-- Repeat the above block for each project -->
+
+                <!-- Project 2 Card -->
+                <div class="project__card">
+                    <a href="projects/project2.html">
+                        <img src="images/home_page.png" alt="Project 2" class="project__img">
+                        <div class="project__info">
+                            <h2 class="project__title">Winnipeg Bus Stops Search</h2>
+                            <p class="project__details">A web application demonstrating the usage of the Winnipeg Transit API, displaying relevant bus stop information.</p>
+                            <p class="project__description">Click to view the full details of this project.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Repeat similar blocks for additional projects -->
             </div>
         </section>
     </main>
@@ -57,15 +72,16 @@
                 </ul>
                 <div class="footer__social">
                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <img src="images/social1.png" alt="facebook" class="social__img">
+                        <img src="images/social1.png" alt="Facebook" class="social__img">
                     </a>
                     <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <img src="images/social2.png" alt="instagram" class="social__img">
+                        <img src="images/social2.png" alt="Instagram" class="social__img">
                     </a>
                 </div>
             </div>
-            <span class="footer__copy">&#169; All rights reserved by Harsimran 2023</span>
+            <span class="footer__copy">&#169; All rights reserved by Harsimran Singh Sarao, 2023</span>
         </div>
     </footer>
 </body>
+
 </html>
