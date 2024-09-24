@@ -499,3 +499,176 @@ ul li strong {
   }
 }
 
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0088ff, #88ff88);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav_logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover, .nav__link:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Responsive image and text alignment in the main home section */
+.home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.home__perfil {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.home__name, .home__profession {
+  color: #0056b3;
+}
+
+/* Contact section enhancement */
+.contact {
+  border-top: 3px solid #0088ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact__form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.contact__input, .contact__area {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.contact__button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact__button:hover {
+  background-color: #004494;
+}
+
+/* Footer adjustments */
+.footer {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer__link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav, .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    margin-bottom: 10px;
+  }
+
+  .home__container {
+    flex-direction: column;
+  }
+
+  .about__skills-content, .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .home__name {
+    font-size: 24px;
+  }
+
+  .home__profession {
+    font-size: 20px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
